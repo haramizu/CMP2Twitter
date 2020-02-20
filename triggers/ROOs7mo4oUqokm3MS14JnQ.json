@@ -1,0 +1,149 @@
+{
+  "version": "1.1.0",
+  "data": {
+    "id": 11555,
+    "identifier": "ROOs7mo4oUqokm3MS14JnQ",
+    "cultures": [],
+    "properties": {
+      "Name": "CMPDemo Twitter",
+      "Description": null,
+      "IsEnabled": true,
+      "RuleSet": {
+        "version": "1.0",
+        "variables": {
+          "mcontent_contentlifecycletocontentchild_added": {
+            "type": "entity_member",
+            "definition": "M.Content",
+            "member": "ContentLifeCycleToContent",
+            "role": "child",
+            "phase": "added"
+          },
+          "lookup_id_9796": {
+            "type": "entity_field_lookup",
+            "field": "id",
+            "by_identifier": "M.ContentLifeCycle.Final"
+          },
+          "entity_definition_field": {
+            "type": "entity_definition_field",
+            "field": "name"
+          }
+        },
+        "condition": {
+          "version": "1.0",
+          "expression": {
+            "type": "and",
+            "children": [
+              {
+                "type": "?:",
+                "if": {
+                  "type": "function",
+                  "name": "isnumber",
+                  "children": [
+                    {
+                      "type": "variable",
+                      "name": "lookup_id_9796"
+                    }
+                  ]
+                },
+                "then": {
+                  "type": "contains",
+                  "first": {
+                    "type": "variable",
+                    "name": "mcontent_contentlifecycletocontentchild_added"
+                  },
+                  "second": {
+                    "type": "variable",
+                    "name": "lookup_id_9796"
+                  }
+                },
+                "else": false
+              },
+              {
+                "type": "eq",
+                "first": {
+                  "type": "variable",
+                  "name": "entity_definition_field"
+                },
+                "second": "M.Content"
+              }
+            ]
+          }
+        }
+      },
+      "M.Trigger.Objective": [
+        {
+          "identifier": "EntityModification",
+          "labels": {
+            "en-US": "Entity modification"
+          }
+        }
+      ],
+      "M.Trigger.Type": {
+        "identifier": "OutOfProcess",
+        "labels": {
+          "en-US": "In background"
+        }
+      },
+      "EventMessage": null
+    },
+    "relations": {
+      "TriggerToAction": {
+        "children": [
+          {
+            "href": "vw6leCCzw0K4fXFHIvzmCw"
+          }
+        ]
+      },
+      "TriggerToPreAction": {
+        "children": []
+      },
+      "TriggerToSecurityPreAction": {
+        "children": []
+      },
+      "TriggerToValidationPreAction": {
+        "children": []
+      },
+      "TriggerToAuditPreAction": {
+        "children": []
+      }
+    },
+    "created_by": {
+      "href": "eW8C2sxq8kOKL-kkBQ2ovQ"
+    },
+    "created_on": "2020-02-20T09:02:32.7671007Z",
+    "modified_by": {
+      "href": "eW8C2sxq8kOKL-kkBQ2ovQ"
+    },
+    "modified_on": "2020-02-20T09:02:43.5571538Z",
+    "entitydefinition": {
+      "href": "M.Trigger",
+      "title": "The entity definition for this entity"
+    },
+    "copy": {
+      "href": null
+    },
+    "permissions": {
+      "href": null
+    },
+    "lifecycle": {
+      "href": null
+    },
+    "saved_selections": {
+      "href": null
+    },
+    "roles": {
+      "href": null
+    },
+    "annotations": {
+      "href": null
+    },
+    "is_root_taxonomy_item": false,
+    "is_path_root": false,
+    "inherits_security": true,
+    "is_system_owned": false,
+    "version": 2,
+    "self": {
+      "href": "ROOs7mo4oUqokm3MS14JnQ"
+    }
+  }
+}

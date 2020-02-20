@@ -1,0 +1,2480 @@
+{
+  "version": "1.1.0",
+  "data": {
+    "id": 130,
+    "name": "M.Content",
+    "modified_on": "2020-02-20T10:01:51.8784058Z",
+    "created_on": "2019-11-28T15:52:29.4585985Z",
+    "display_template": "{Content.Name}",
+    "is_taxonomy_item_definition": false,
+    "is_path_enabled_definition": false,
+    "is_manual_sorting_allowed": false,
+    "is_system_owned": false,
+    "labels": {
+      "en-US": "Content"
+    },
+    "member_groups": [
+      {
+        "name": "General",
+        "labels": {
+          "en-US": "General"
+        },
+        "members": [
+          {
+            "type": "String",
+            "content_type": 0,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": true,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Content.Name",
+            "labels": {
+              "en-US": "Name"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 1,
+            "cardinality": 1,
+            "associated_entitydefinition": {
+              "href": "M.CMP.Campaign",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": true,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "Content"
+            },
+            "name": "CampaignToContent",
+            "labels": {
+              "en-US": "Campaign"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 1,
+            "cardinality": 2,
+            "associated_entitydefinition": {
+              "href": "User",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": false,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {},
+            "name": "StateUserToMContent",
+            "labels": {
+              "en-US": "Users"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 1,
+            "cardinality": 1,
+            "associated_entitydefinition": {
+              "href": "M.Localization",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": true,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "Content"
+            },
+            "name": "LocalizationToContent",
+            "labels": {
+              "en-US": "Localization"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Boolean",
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": false,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "MasterAssetIsContent",
+            "labels": {
+              "en-US": "Master asset is content"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "DateTime",
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": false,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Content.ExpirationDate",
+            "labels": {
+              "en-US": "Expiration date"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "DateTime",
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": false,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Content.PublishedOn",
+            "labels": {
+              "en-US": "Published on"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Boolean",
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": false,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Content.DynamicPublishDate",
+            "labels": {
+              "en-US": "Dynamic publish date"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Integer",
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": false,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Content.DaysFromCampaignStart",
+            "labels": {
+              "en-US": "Days from campaign start"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 1,
+            "cardinality": 2,
+            "associated_entitydefinition": {
+              "href": "M.Tag",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": true,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {},
+            "name": "TagToContent",
+            "labels": {
+              "en-US": "Tag to content"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Long",
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": false,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Content.Impact",
+            "labels": {
+              "en-US": "Impact"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 0,
+            "cardinality": 1,
+            "associated_entitydefinition": {
+              "href": "M.Content",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": false,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "Localized to"
+            },
+            "name": "ContentToContentLocalization",
+            "labels": {
+              "en-US": "Localized from"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 1,
+            "cardinality": 1,
+            "associated_entitydefinition": {
+              "href": "M.Content",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": false,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "Localized from"
+            },
+            "name": "ContentToContentLocalization",
+            "labels": {
+              "en-US": "Localized to"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          }
+        ],
+        "is_system_owned": true,
+        "is_conditional": false,
+        "conditions": [],
+        "is_secured": false
+      },
+      {
+        "name": "User_General",
+        "labels": {
+          "en-US": "General (custom)"
+        },
+        "members": [],
+        "is_system_owned": false,
+        "is_conditional": false,
+        "conditions": [],
+        "is_secured": false
+      },
+      {
+        "name": "Strategy",
+        "labels": {
+          "en-US": "Strategy"
+        },
+        "members": [
+          {
+            "type": "Relation",
+            "role": 1,
+            "cardinality": 1,
+            "associated_entitydefinition": {
+              "href": "M.CMP.PublicationStatus",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": true,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "Content"
+            },
+            "name": "PublicationStatusToContent",
+            "labels": {
+              "en-US": "Publication status"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 1,
+            "cardinality": 1,
+            "associated_entitydefinition": {
+              "href": "M.ContentType",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": true,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": true,
+            "nested_properties": [
+              "ContentType.Label",
+              "Entity.Visualization"
+            ],
+            "is_taxonomy_relation": true,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": true,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "Content"
+            },
+            "name": "ContentTypeToContent",
+            "labels": {
+              "en-US": "Type"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": true,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 1,
+            "cardinality": 2,
+            "associated_entitydefinition": {
+              "href": "M.CMP.Audience",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": true,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {},
+            "name": "AudienceToContent",
+            "labels": {
+              "en-US": "Audience"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 1,
+            "cardinality": 2,
+            "associated_entitydefinition": {
+              "href": "M.ChannelAccount",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": true,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": true,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "Content"
+            },
+            "name": "ChannelAccountToContent",
+            "labels": {
+              "en-US": "Channel accounts"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 1,
+            "cardinality": 1,
+            "associated_entitydefinition": {
+              "href": "M.CMP.Region",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": true,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {},
+            "name": "RegionToContent",
+            "labels": {
+              "en-US": "Region"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "DateTimeOffset",
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": false,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Content.PublicationDate",
+            "labels": {
+              "en-US": "Publication date"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "String",
+            "content_type": 2,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Content.Brief",
+            "labels": {
+              "en-US": "Brief"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Integer",
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": false,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Content.ContentStoryPoints",
+            "labels": {
+              "en-US": "Story points"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          }
+        ],
+        "is_system_owned": true,
+        "is_conditional": false,
+        "conditions": [],
+        "is_secured": false
+      },
+      {
+        "name": "User_Strategy",
+        "labels": {
+          "en-US": "Strategy (custom)"
+        },
+        "members": [],
+        "is_system_owned": false,
+        "is_conditional": false,
+        "conditions": [],
+        "is_secured": false
+      },
+      {
+        "name": "Status",
+        "labels": {
+          "en-US": "Status"
+        },
+        "members": [
+          {
+            "type": "Relation",
+            "role": 1,
+            "cardinality": 1,
+            "associated_entitydefinition": {
+              "href": "M.ContentLifeCycle",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": true,
+            "allow_navigation": true,
+            "is_nested": true,
+            "nested_properties": [
+              "ContentLifeCycle.Label",
+              "Entity.Visualization"
+            ],
+            "is_taxonomy_relation": true,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "Content"
+            },
+            "name": "ContentLifeCycleToContent",
+            "labels": {
+              "en-US": "Status"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "String",
+            "content_type": 0,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": false,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "datasource": {
+              "href": "M.CompletenessStatus"
+            },
+            "name": "Content.StrategyCompletenessStatus",
+            "labels": {
+              "en-US": "Strategy completeness"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "String",
+            "content_type": 0,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": false,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "datasource": {
+              "href": "M.CompletenessStatus"
+            },
+            "name": "Content.ContentCompletenessStatus",
+            "labels": {
+              "en-US": "Content completeness"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "String",
+            "content_type": 0,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": false,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "datasource": {
+              "href": "CMP.Variant"
+            },
+            "name": "Content.Variant",
+            "labels": {
+              "en-US": "Variant"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 0,
+            "cardinality": 1,
+            "associated_entitydefinition": {
+              "href": "M.Content",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": false,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "Adapted to"
+            },
+            "name": "ContentToContentAdaptation",
+            "labels": {
+              "en-US": "Adapted from"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 1,
+            "cardinality": 1,
+            "associated_entitydefinition": {
+              "href": "M.Content",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": false,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "Adapted from"
+            },
+            "name": "ContentToContentAdaptation",
+            "labels": {
+              "en-US": "Adapted to"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 0,
+            "cardinality": 1,
+            "associated_entitydefinition": {
+              "href": "M.WhereUsed",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": false,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "Content"
+            },
+            "name": "ContentToWhereUsed",
+            "labels": {
+              "en-US": "Publications"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          }
+        ],
+        "is_system_owned": true,
+        "is_conditional": false,
+        "conditions": [],
+        "is_secured": false
+      },
+      {
+        "name": "Assets",
+        "labels": {
+          "en-US": "Assets"
+        },
+        "members": [
+          {
+            "type": "Relation",
+            "role": 0,
+            "cardinality": 2,
+            "associated_entitydefinition": {
+              "href": "M.Asset",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": false,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "Content"
+            },
+            "name": "CmpContentToLinkedAsset",
+            "labels": {
+              "en-US": "Linked assets"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 0,
+            "cardinality": 2,
+            "associated_entitydefinition": {
+              "href": "M.Asset",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": false,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "Brief"
+            },
+            "name": "CmpContentToBriefAsset",
+            "labels": {
+              "en-US": "Brief assets"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 0,
+            "cardinality": 2,
+            "associated_entitydefinition": {
+              "href": "M.Fragment",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": false,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {},
+            "name": "ContentToLinkedFragment",
+            "labels": {
+              "en-US": "Linked fragments"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 0,
+            "cardinality": 2,
+            "associated_entitydefinition": {
+              "href": "M.Asset",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": false,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": true,
+            "associated_labels": {
+              "en-US": "Content"
+            },
+            "name": "CmpContentToMasterLinkedAsset",
+            "labels": {
+              "en-US": "Master linked asset"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          }
+        ],
+        "is_system_owned": true,
+        "is_conditional": false,
+        "conditions": [],
+        "is_secured": false
+      },
+      {
+        "name": "Versioning",
+        "labels": {},
+        "members": [
+          {
+            "type": "Integer",
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": false,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Content.NumberOfCreatedVersions",
+            "labels": {
+              "en-US": "Number of created versions"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": false
+          },
+          {
+            "type": "Relation",
+            "role": 0,
+            "cardinality": 0,
+            "associated_entitydefinition": {
+              "href": "M.ContentVersion",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": false,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "Current master content"
+            },
+            "name": "MasterContentVersion",
+            "labels": {},
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 0,
+            "cardinality": 2,
+            "associated_entitydefinition": {
+              "href": "M.ContentVersion",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": true,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": false,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "Current content"
+            },
+            "name": "ContentVersionHistory",
+            "labels": {},
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          }
+        ],
+        "is_system_owned": true,
+        "is_conditional": false,
+        "conditions": [],
+        "is_secured": false
+      },
+      {
+        "name": "System",
+        "labels": {},
+        "members": [
+          {
+            "type": "Json",
+            "content_type": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": false,
+            "included_in_completion": false,
+            "ignore_on_export": true,
+            "stored_in_graph": false,
+            "name": "Renditions",
+            "labels": {
+              "en-US": "Renditions"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": false
+          },
+          {
+            "type": "Boolean",
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": false,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Content.ApprovedForCreation",
+            "labels": {
+              "en-US": "Approved for creation"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Boolean",
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": false,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Content.IsInIdeationState",
+            "labels": {
+              "en-US": "Is in ideation state"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 0,
+            "cardinality": 2,
+            "associated_entitydefinition": {
+              "href": "M.Automation.Route",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": false,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "Available routes"
+            },
+            "name": "MContentToAvailableRoute",
+            "labels": {
+              "en-US": "Available routes"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 0,
+            "cardinality": 2,
+            "associated_entitydefinition": {
+              "href": "M.Automation.State",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": true,
+            "is_taxonomy_relation": false,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "Active states"
+            },
+            "name": "MContentToActiveState",
+            "labels": {
+              "en-US": "Active states"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          }
+        ],
+        "is_system_owned": true,
+        "is_conditional": false,
+        "conditions": [],
+        "is_secured": false
+      },
+      {
+        "name": "Blog_Content",
+        "content_group": "content",
+        "labels": {
+          "en-US": "Content (Blog)"
+        },
+        "members": [
+          {
+            "type": "String",
+            "content_type": 0,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Blog_Title",
+            "labels": {
+              "en-US": "Title"
+            },
+            "helptext": {
+              "en-US": "Edit blog title here"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "String",
+            "content_type": 2,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Blog_Quote",
+            "labels": {
+              "en-US": "Quote"
+            },
+            "helptext": {
+              "en-US": "Add a quote here"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "String",
+            "content_type": 2,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Blog_Body",
+            "labels": {
+              "en-US": "Body"
+            },
+            "helptext": {
+              "en-US": "Edit blog body text here"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          }
+        ],
+        "is_system_owned": false,
+        "is_conditional": true,
+        "conditions": [
+          {
+            "value": {
+              "href": "M.ContentType.Blog"
+            },
+            "member": "ContentTypeToContent"
+          }
+        ],
+        "is_secured": false
+      },
+      {
+        "name": "Blog_Brief",
+        "content_group": "brief",
+        "labels": {
+          "en-US": "Blog details"
+        },
+        "members": [],
+        "is_system_owned": false,
+        "is_conditional": true,
+        "conditions": [
+          {
+            "value": {
+              "href": "M.ContentType.Blog"
+            },
+            "member": "ContentTypeToContent"
+          }
+        ],
+        "is_secured": false
+      },
+      {
+        "name": "SocialMediaMessage_Content",
+        "content_group": "content",
+        "labels": {
+          "en-US": "Content (Social media)"
+        },
+        "members": [
+          {
+            "type": "String",
+            "content_type": 2,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "SocialMediaMessage_Body",
+            "labels": {
+              "en-US": "Body"
+            },
+            "helptext": {
+              "en-US": "Edit social media message body here"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "String",
+            "content_type": 2,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "SocialMediaMessage_Footer",
+            "labels": {
+              "en-US": "Footer"
+            },
+            "helptext": {
+              "en-US": "Add tags here"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          }
+        ],
+        "is_system_owned": false,
+        "is_conditional": true,
+        "conditions": [
+          {
+            "value": {
+              "href": "M.ContentType.SocialMediaMessage"
+            },
+            "member": "ContentTypeToContent"
+          }
+        ],
+        "is_secured": false
+      },
+      {
+        "name": "SocialMediaMessage_Brief",
+        "content_group": "brief",
+        "labels": {
+          "en-US": "Social media details"
+        },
+        "members": [],
+        "is_system_owned": false,
+        "is_conditional": true,
+        "conditions": [
+          {
+            "value": {
+              "href": "M.ContentType.SocialMediaMessage"
+            },
+            "member": "ContentTypeToContent"
+          }
+        ],
+        "is_secured": false
+      },
+      {
+        "name": "WhitePaper_Content",
+        "content_group": "content",
+        "labels": {
+          "en-US": "Content (White paper)"
+        },
+        "members": [
+          {
+            "type": "String",
+            "content_type": 0,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "WhitePaper_Title",
+            "labels": {
+              "en-US": "Title"
+            },
+            "helptext": {
+              "en-US": "Edit title here"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "String",
+            "content_type": 0,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "WhitePaper_Header",
+            "labels": {
+              "en-US": "Header"
+            },
+            "helptext": {
+              "en-US": "Edit white paper header text here"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "String",
+            "content_type": 2,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "WhitePaper_Body",
+            "labels": {
+              "en-US": "Body"
+            },
+            "helptext": {
+              "en-US": "Edit white paper body text here"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "String",
+            "content_type": 2,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "WhitePaper_Footer",
+            "labels": {
+              "en-US": "Footer"
+            },
+            "helptext": {
+              "en-US": "Edit white paper footer text here"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          }
+        ],
+        "is_system_owned": false,
+        "is_conditional": true,
+        "conditions": [
+          {
+            "value": {
+              "href": "M.ContentType.WhitePaper"
+            },
+            "member": "ContentTypeToContent"
+          }
+        ],
+        "is_secured": false
+      },
+      {
+        "name": "WhitePaper_Brief",
+        "content_group": "brief",
+        "labels": {
+          "en-US": "White paper details"
+        },
+        "members": [],
+        "is_system_owned": false,
+        "is_conditional": true,
+        "conditions": [
+          {
+            "value": {
+              "href": "M.ContentType.WhitePaper"
+            },
+            "member": "ContentTypeToContent"
+          }
+        ],
+        "is_secured": false
+      },
+      {
+        "name": "Recipe_Content",
+        "content_group": "content",
+        "labels": {
+          "en-US": "Content (Recipe)"
+        },
+        "members": [
+          {
+            "type": "String",
+            "content_type": 0,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Recipe_Title",
+            "labels": {
+              "en-US": "Title"
+            },
+            "helptext": {
+              "en-US": "Edit title here"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "String",
+            "content_type": 2,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Recipe_Ingredients",
+            "labels": {
+              "en-US": "Ingredients"
+            },
+            "helptext": {
+              "en-US": "List the ingredients"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "String",
+            "content_type": 2,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Recipe_Cookinginstructions",
+            "labels": {
+              "en-US": "Cooking instructions"
+            },
+            "helptext": {
+              "en-US": "Edit cooking instructions here"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "String",
+            "content_type": 2,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Recipe_Nutritionalfacts",
+            "labels": {
+              "en-US": "Nutritional facts"
+            },
+            "helptext": {
+              "en-US": "Add some nutritional facts"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          }
+        ],
+        "is_system_owned": false,
+        "is_conditional": true,
+        "conditions": [
+          {
+            "value": {
+              "href": "M.ContentType.Recipe"
+            },
+            "member": "ContentTypeToContent"
+          }
+        ],
+        "is_secured": false
+      },
+      {
+        "name": "Recipe_Brief",
+        "content_group": "brief",
+        "labels": {
+          "en-US": "Recipe details"
+        },
+        "members": [],
+        "is_system_owned": false,
+        "is_conditional": true,
+        "conditions": [
+          {
+            "value": {
+              "href": "M.ContentType.Recipe"
+            },
+            "member": "ContentTypeToContent"
+          }
+        ],
+        "is_secured": false
+      },
+      {
+        "name": "Webinar_Content",
+        "content_group": "content",
+        "labels": {
+          "en-US": "Content (Webinar)"
+        },
+        "members": [
+          {
+            "type": "String",
+            "content_type": 0,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Webinar_Title",
+            "labels": {
+              "en-US": "Title"
+            },
+            "helptext": {
+              "en-US": "Edit title here"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "String",
+            "content_type": 2,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Webinar_Description",
+            "labels": {
+              "en-US": "Description"
+            },
+            "helptext": {
+              "en-US": "Edit webinar description text here"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          }
+        ],
+        "is_system_owned": false,
+        "is_conditional": true,
+        "conditions": [
+          {
+            "value": {
+              "href": "M.ContentType.Webinar"
+            },
+            "member": "ContentTypeToContent"
+          }
+        ],
+        "is_secured": false
+      },
+      {
+        "name": "Webinar_Brief",
+        "content_group": "brief",
+        "labels": {
+          "en-US": "Webinar details"
+        },
+        "members": [],
+        "is_system_owned": false,
+        "is_conditional": true,
+        "conditions": [
+          {
+            "value": {
+              "href": "M.ContentType.Webinar"
+            },
+            "member": "ContentTypeToContent"
+          }
+        ],
+        "is_secured": false
+      },
+      {
+        "name": "Email_Content",
+        "content_group": "content",
+        "labels": {
+          "en-US": "Content (Email)"
+        },
+        "members": [
+          {
+            "type": "String",
+            "content_type": 0,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Email_Subject",
+            "labels": {
+              "en-US": "Subject"
+            },
+            "helptext": {
+              "en-US": "Edit email subject here"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "String",
+            "content_type": 2,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Email_Body",
+            "labels": {
+              "en-US": "Body"
+            },
+            "helptext": {
+              "en-US": "Edit email body text here"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          }
+        ],
+        "is_system_owned": false,
+        "is_conditional": true,
+        "conditions": [
+          {
+            "value": {
+              "href": "M.ContentType.Email"
+            },
+            "member": "ContentTypeToContent"
+          }
+        ],
+        "is_secured": false
+      },
+      {
+        "name": "Email_Brief",
+        "content_group": "brief",
+        "labels": {
+          "en-US": "Email details"
+        },
+        "members": [
+          {
+            "type": "String",
+            "content_type": 0,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Email_Recipients",
+            "labels": {
+              "en-US": "Recipients"
+            },
+            "helptext": {
+              "en-US": "Edit recipients here, separated by ;"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "String",
+            "content_type": 0,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Email_Sender",
+            "labels": {
+              "en-US": "Sender"
+            },
+            "helptext": {
+              "en-US": "Edit sender here"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          }
+        ],
+        "is_system_owned": false,
+        "is_conditional": true,
+        "conditions": [
+          {
+            "value": {
+              "href": "M.ContentType.Email"
+            },
+            "member": "ContentTypeToContent"
+          }
+        ],
+        "is_secured": false
+      },
+      {
+        "name": "Advertisement_Content",
+        "content_group": "content",
+        "labels": {
+          "en-US": "Content (Advertisement)"
+        },
+        "members": [
+          {
+            "type": "String",
+            "content_type": 0,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Advertisement_Title",
+            "labels": {
+              "en-US": "Title"
+            },
+            "helptext": {
+              "en-US": "Enter advertisement title here"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "String",
+            "content_type": 2,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Advertisement_Body",
+            "labels": {
+              "en-US": "Body"
+            },
+            "helptext": {
+              "en-US": "Enter advertisement body text here"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          }
+        ],
+        "is_system_owned": false,
+        "is_conditional": true,
+        "conditions": [
+          {
+            "value": {
+              "href": "M.ContentType.Advertisement"
+            },
+            "member": "ContentTypeToContent"
+          }
+        ],
+        "is_secured": false
+      },
+      {
+        "name": "Advertisement_Brief",
+        "content_group": "brief",
+        "labels": {
+          "en-US": "Advertisement details"
+        },
+        "members": [],
+        "is_system_owned": false,
+        "is_conditional": true,
+        "conditions": [
+          {
+            "value": {
+              "href": "M.ContentType.Advertisement"
+            },
+            "member": "ContentTypeToContent"
+          }
+        ],
+        "is_secured": false
+      },
+      {
+        "name": "StateMachine",
+        "labels": {
+          "en-US": "State flow"
+        },
+        "members": [
+          {
+            "type": "Relation",
+            "role": 0,
+            "cardinality": 2,
+            "associated_entitydefinition": {
+              "href": "M.Automation.StateMachine",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": false,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "State flows"
+            },
+            "name": "MContentToStateMachine",
+            "labels": {
+              "en-US": "State flows"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          }
+        ],
+        "is_system_owned": true,
+        "is_conditional": false,
+        "conditions": [],
+        "is_secured": false
+      },
+      {
+        "name": "Assignment",
+        "labels": {
+          "en-US": "Assignment"
+        },
+        "members": [
+          {
+            "type": "Relation",
+            "role": 1,
+            "cardinality": 2,
+            "associated_entitydefinition": {
+              "href": "User",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": true,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {},
+            "name": "AssignedUserToMContent",
+            "labels": {
+              "en-US": "Assigned users"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          },
+          {
+            "type": "Relation",
+            "role": 1,
+            "cardinality": 2,
+            "associated_entitydefinition": {
+              "href": "UserGroup",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": false,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": false,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": false,
+            "completion_is_copied": false,
+            "is_path_relation": false,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {},
+            "name": "AssignedUserGroupToMContent",
+            "labels": {
+              "en-US": "Assigned user groups"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": true,
+            "is_secured": false,
+            "allow_updates": true
+          }
+        ],
+        "is_system_owned": true,
+        "is_conditional": false,
+        "conditions": [],
+        "is_secured": false
+      },
+      {
+        "name": "Main",
+        "labels": {
+          "en-US": "Main"
+        },
+        "members": [
+          {
+            "type": "Relation",
+            "role": 1,
+            "cardinality": 2,
+            "associated_entitydefinition": {
+              "href": "M.PCM.Product",
+              "title": "The associated entity definition for this relation."
+            },
+            "child_is_mandatory": false,
+            "parent_is_mandatory": false,
+            "inherits_security": true,
+            "allow_navigation": true,
+            "is_nested": false,
+            "is_taxonomy_relation": false,
+            "is_taxonomy_hierarchy_relation": false,
+            "content_is_copied": true,
+            "completion_is_copied": true,
+            "is_path_relation": true,
+            "is_path_hierarchy_relation": false,
+            "path_hierarchy_score": 0,
+            "is_rendition_relation": false,
+            "associated_labels": {
+              "en-US": "Content"
+            },
+            "name": "PCMProductToContent",
+            "labels": {
+              "en-US": "Product"
+            },
+            "helptext": {},
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          }
+        ],
+        "is_system_owned": true,
+        "is_conditional": false,
+        "conditions": [],
+        "is_secured": false
+      },
+      {
+        "name": "Twitter_Content",
+        "content_group": "content",
+        "labels": {
+          "en-US": "Twitter content"
+        },
+        "members": [
+          {
+            "type": "String",
+            "content_type": 0,
+            "validation_expression": null,
+            "is_indexed": false,
+            "is_mandatory": false,
+            "is_multilanguage": false,
+            "is_multivalue": false,
+            "is_unique": false,
+            "boost": false,
+            "included_in_content": true,
+            "included_in_completion": false,
+            "ignore_on_export": false,
+            "stored_in_graph": false,
+            "name": "Twitter_Content",
+            "labels": {
+              "en-US": "Content"
+            },
+            "helptext": {
+              "en-US": "Edit Twitter comment"
+            },
+            "is_conditional": false,
+            "conditions": [],
+            "can_trigger_conditional_members": false,
+            "is_system_owned": false,
+            "is_secured": false,
+            "allow_updates": true
+          }
+        ],
+        "is_system_owned": false,
+        "is_conditional": true,
+        "conditions": [
+          {
+            "value": {
+              "href": "M.ContentType.Twitter"
+            },
+            "member": "ContentTypeToContent"
+          }
+        ],
+        "is_secured": false
+      },
+      {
+        "name": "Twitter_Brief",
+        "content_group": "brief",
+        "labels": {
+          "en-US": "Twitter details"
+        },
+        "members": [],
+        "is_system_owned": false,
+        "is_conditional": true,
+        "conditions": [
+          {
+            "value": {
+              "href": "M.ContentType.Twitter"
+            },
+            "member": "ContentTypeToContent"
+          }
+        ],
+        "is_secured": false
+      }
+    ],
+    "entities": {
+      "href": null
+    },
+    "related_paths": {
+      "href": null
+    },
+    "modified_by": {
+      "href": "RZFvZ8cKa0SqhrWM6WW9xQ"
+    },
+    "created_by": {
+      "href": "User.Administrator"
+    },
+    "self": {
+      "href": "M.Content",
+      "title": "This entity definition"
+    }
+  }
+}

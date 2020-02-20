@@ -1,0 +1,15 @@
+{
+  "version": "1.1.0",
+  "m_version": "3.3.0.920",
+  "user": "shinhara@sitecore.net",
+  "source": "b7d8e0e66921",
+  "options": {
+    "items": [
+      "schema",
+      "taxonomies",
+      "triggers"
+    ],
+    "include_system_owned": false,
+    "since": null
+  }
+}

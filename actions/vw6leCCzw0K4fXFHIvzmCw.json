@@ -1,0 +1,91 @@
+{
+  "version": "1.1.0",
+  "data": {
+    "id": 11513,
+    "identifier": "vw6leCCzw0K4fXFHIvzmCw",
+    "cultures": [
+      "en-US",
+      "ja-JP"
+    ],
+    "properties": {
+      "Type": {
+        "identifier": "AzureServiceBus",
+        "labels": {
+          "en-US": "Azure Service Bus"
+        }
+      },
+      "Settings": {
+        "connectionString": "Endpoint=sb://cmpdemojp.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=1OJznlrQpB3M3a3a0mN0PfeVfssgTq2uV3E9EGzPCYE=",
+        "destination": "m_out",
+        "destinationType": "Topic",
+        "headers": [
+          {
+            "key": "host_header",
+            "value": "sitecorejp.stylelabs.io"
+          }
+        ],
+        "values": []
+      },
+      "ActionExecutionScope": {
+        "identifier": "External",
+        "labels": {
+          "en-US": "External"
+        }
+      },
+      "ActionLabel": {},
+      "ActionName": "CMPDemo - Twitter",
+      "DefinitionName": null,
+      "Defaults": null,
+      "PEG_DefinitionName": null
+    },
+    "relations": {
+      "ActionToScript": {
+        "children": []
+      },
+      "ActionToStateMachine": {
+        "children": []
+      },
+      "ActionToTemplate": {
+        "children": []
+      }
+    },
+    "created_by": {
+      "href": "eW8C2sxq8kOKL-kkBQ2ovQ"
+    },
+    "created_on": "2020-02-20T08:34:30.1118473Z",
+    "modified_by": {
+      "href": "eW8C2sxq8kOKL-kkBQ2ovQ"
+    },
+    "modified_on": "2020-02-20T08:34:30.1578053Z",
+    "entitydefinition": {
+      "href": "M.Action",
+      "title": "The entity definition for this entity"
+    },
+    "copy": {
+      "href": null
+    },
+    "permissions": {
+      "href": null
+    },
+    "lifecycle": {
+      "href": null
+    },
+    "saved_selections": {
+      "href": null
+    },
+    "roles": {
+      "href": null
+    },
+    "annotations": {
+      "href": null
+    },
+    "is_root_taxonomy_item": false,
+    "is_path_root": false,
+    "inherits_security": true,
+    "is_system_owned": false,
+    "version": 2,
+    "self": {
+      "href": "vw6leCCzw0K4fXFHIvzmCw"
+    }
+  }
+}
